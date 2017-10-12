@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Metal+Mania|Nosifer|Rye" rel="stylesheet">
+</head>
+<body>
+    <!-- <h1>Hang the Man</h1> -->
+    <div class="gallows ">
+        <!-- Show the lives -->
+        <div class="background scene">
+            <img src="./images/cartoon-hills-4.png">
+        </div>
+        <div class="dynamic-shadow scene">
+            <img src="./images/firelight.png">
+        </div>
+        <div class="static-cover scene">
+            <img src="./images/hardshadows.png">
+        </div>
+        <div class="fire scene">
+            <img src="./images/campfire.gif">
+        </div>
+        <div class="objects scene">
+            <div class="top">
+                <img class="l-crowd" src="./images/audience-l-3.png">
+                <img class="hungman" src="./images/Hangman-0.png">
+                <img class="r-crowd" src="./images/audience-r-3.png">
+            </div>
+        </div>   
+        <div class="sky scene">
+            <img src="./images/nightsky2.png">
+        </div>
+        <!-- a bunch of progresive hangman pictures -->
+    </div>
+
+   <div class="container"> 
+    <div class="hintbox scene">
+
+        <img src="./images/hintsign.png">
+        <div class="scene">
+            <h3 class="hint">Place Holder</h2>
+        </div>
+    </div>
+    <div class="again scene ">
+        <h2></h2>
+        <h3>Would you like to "play" again?</h3>
+        <div class=" div-ignore y" ><div name="y" class=""><img class="speech" src="./images/letter.png"><h4 class="opt" >y</h4></div></div>
+        <div class=" div-ignore n" ><div name="n" class=""><img class="speech" src="./images/letter.png"><h4 class="opt" >n</h4></div></div>
+    </div>
+    <!-- put the hangman here -->
+   <div class="letters">
+       <div class="backsign scene">
+            <img src="./images/sign.png">
+       </div>
+       <div class=" cons scene ">
+            <h3 class="">Available Consonants:</h3>
+        <div class="consonants">
+        </div>
+        </div>
+        <div class=" vows scene ">
+            <h3 class="">Available Vowels:</h3>
+        <div class="vowels">
+        </div>
+        </div>
+       <!-- this is where nthe letter buttons will go -->
+   </div> 
+   <div class="used-box scene ">
+       <div class="lets-used scene">
+       <h3>Used Letters:</h3>
+       <div id="used" class="used scene ">
+
+       </div>
+        </div>
+       <!-- this is where nthe letter buttons will go -->
+   </div> 
+   <div class="control ">
+       <!-- put some controls here -->
+   </div>
+   <div class="past">
+       <!-- put pas games here -->
+   </div> 
+ </div>
+<script
+   src="https://code.jquery.com/jquery-3.2.1.min.js"
+   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+   crossorigin="anonymous"></script>
+   
+   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script> -->
+   <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script> -->
+   
+   <script src="./index.js" type="text/javascript"></script>
+
+</body>
+</html>

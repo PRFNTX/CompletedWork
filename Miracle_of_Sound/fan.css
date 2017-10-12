@@ -1,0 +1,24 @@
+    /* <!--to navigate the dumb amount of stuff i did:   --> */
+    /* <!--  search for " HERE " on each page to jump to required features--> */
+img {
+    width:100%;
+    margin:2%;
+}
+
+.row div {
+    margin-top:2vh;
+}
+
+i.fa-phone {
+    font-size:10vh;
+}
+
+@media (max-width:700px){
+    h1{
+        font-size:7vw;
+    }
+
+    i.fa-phone {
+        font-size:12vw;
+    }
+}

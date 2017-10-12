@@ -1,0 +1,403 @@
+
+
+    /* <!--to navigate the dumb amount of stuff i did:   --> */
+    /* <!--  search for " HERE " on each page to jump to required features--> */
+/* Base Elements */
+html {
+    font-size:14px;
+}
+body {
+    /* HERE */
+    font-family: 'Encone Sans Expanded', sans-serif;
+    background-color: rgb(180, 180,210);
+    margin:0;
+}
+
+h1 {
+    display:inline-block;
+    margin-bottom:0.5vh;
+    margin-top:1.5vh;
+    /*font-size:2.5rem;*/
+    font-size: 6vh;
+}
+
+h3 {
+    margin:0px 0px 0.5vh 2vh;
+    font-size:3vh;
+}
+h4 {
+    margin:10px 0px 10px 0px;
+    font-size:3vh;
+}
+
+h5 {
+    margin:5px 0px 5px 20px;
+}
+
+p{
+    /* i also used vh for font sizes */
+    text-align:justify;
+    font-size:1.5vh;
+}
+
+/* HERE (border, image scaling to container) */
+img { 
+    margin-left:5%;
+    vertical-align: top;
+    width:40%;
+    border:2px solid lightslategray;
+    border-radius:5px;
+    padding: 1%;
+}
+
+.buffer-t20 {
+    margin-top:20vh;
+}
+
+.right a, .left a {
+    display:block;
+    position: fixed;
+    bottom:10px;
+    left:2vh;
+    background-color: rgba(160,160,180,0.4);
+}
+
+/* independant classes */
+
+.grid{
+    margin:0 auto;
+}
+
+.grid-view {
+    position:fixed;
+    left:42.5vw;
+    width:50px;
+    bottom:1vh;
+    text-align: center;
+}
+
+
+.tab {
+    margin-left:5vw;
+}
+/* Bootstrap override */
+.form-group {
+    max-width:40vw;
+}
+
+nav {
+    margin-bottom:16vh;
+}
+#navbarNavDropdown {
+    background-color: lightslategray;
+}
+
+/* HERE (background/text) */
+.theme-color {
+    background-color:lightslategray;
+    color: rgb(250,180,0) !important;
+}
+
+.theme-text {
+    color: rgb(250,180,0) !important;
+}
+
+.navbar-toggler-icon {
+
+    color: rgb(250,180,0)  !important;
+    font-size:4vh;
+    vertical-align: middle;
+}
+
+#px-vh {
+    height:6vh;
+    font-size:3vh;
+    vertical-align: bottom;
+}
+
+/* Misc */
+.header {
+    position:fixed;
+    top:6vh;
+    width:100%;
+    height:14vh;
+    text-align: center;
+    background-color:lightslategray;
+    color: rgb(250,180,0);
+    font-family: 'Unlock', cursive;
+    z-index: 1;
+}
+
+.box-text {
+    background-color:rgba(0,0,0,0.25);
+    border-radius:10px;
+    padding: 5px 10px;
+    border: 2px solid white;
+    color: rgb(220,240,220);
+    box-shadow:5px 4px 6px rgba(0,0,0,0.3);
+}
+
+.reference {
+    display:block;
+    margin:5px;
+}
+
+#photo-albums img, #photo-albums ul,#photo-albums h3,#photo-albums div  {
+    display:inline-block;
+    position:relative;
+    margin-top:10px;
+    width:45%;
+}
+
+#photo-albums ul {
+    margin-left:5%;
+    margin-top:5px;
+    padding-bottom:10px;
+}
+
+/* Main Columns */
+.left {
+    position:fixed;
+    width:45%;
+    margin-left:0px;
+    overflow: auto;
+    padding: 1.5%;
+    height:86vh;
+    box-shadow: 2px 0 2px rgba(0,0,0,0.25);
+    display:inline-block;
+}
+
+.right {
+    width:50%;
+    overflow:auto;
+    position:relative;
+    float:right;
+}
+
+/* Comment section */
+.comments {
+    margin:0 auto;
+    display:block;
+    background-color: rgba(120,120,130,0.3);
+    border:1px solid rgba(200,200,200,0.6);
+    position: fixed;
+    top:20vh;
+    right:0;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.25);
+    cursor: pointer;
+    font-size:2rem;
+    z-index: 2;
+}
+
+.button-icon {
+    background-color: rgba(120,120,130,0.3);
+    border:1px solid rgba(200,200,200,0.6); 
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.25);
+    cursor: pointer; 
+    font-size:2rem;
+    z-index: 2;
+}
+
+.comments h5 {
+    margin:5px 0px;
+    padding:0 6px;
+    border-right:1px solid rgba(200,200,200,0.6);
+    display:inline;
+    color: rgb(250,180,0);
+}
+
+.comments i {
+    padding:0 6px;
+    margin: 0 6px;
+    color: rgb(250,200,0);
+}
+
+/* .album and children */
+hr {
+    margin:10px 5% 10px 10%;
+}
+
+
+.album {
+    margin:0 auto;
+}
+
+/* ===> img */
+.album img {
+    width:100%;
+    height:100%;
+    margin:0;
+}
+
+.album:hover img {
+    width:100px;
+    height:100px;
+    transition:height 0.5s , width 0.5s ;
+}
+
+/* ===> thumbnail text*/
+.album .thumb-title {
+    padding-top:20px;
+    visibility:hidden;
+    height:0px;
+    display:inline-block;
+}
+
+.album:hover .thumb-title {
+    visibility:visible;
+    height:auto;
+}
+
+/* ===> ordered list and items */
+.album ol {
+    height:0px;
+    visibility:hidden;
+}
+
+.album:hover ol {
+    height: 100%;
+    transition: height 0.5s;
+    margin-top:4vh;
+    margin-left:10%;
+    margin-right:10%;
+    visibility:visible;
+}
+
+.album ol li {
+    height:0px;
+    visibility: hidden;
+}
+
+.album:hover ol li {
+    margin-left:15px;
+    font-size:10px;
+    height:auto;
+    transition: height 0.5s;
+    visibility:visible;
+    text-align:justify;
+}
+
+/* ===> div around ordered list */
+.album:hover .list {
+    height: inherit;
+}
+
+/* ===> list item span (for spacing) */
+.album ol span {
+    margin-left:20px;
+    text-indent:-50px;
+}
+
+/* Comments tab */
+
+#comments-list {
+    bottom:230px;
+    top:24vh;
+    overflow:scroll;
+    position:fixed;
+    width:inherit;
+}
+.new-comment {
+    display:block;
+    position: relative;
+    position:  fixed;
+    bottom:1vh;
+    width:inherit;
+    padding-bottom: 1vh;
+    border-top:1px solid grey;
+    margin:0 auto;
+}
+
+.text {
+    display: block;
+}
+
+.bottom-right {
+    position:relative;
+    right:0;
+}
+
+
+/* js classes */
+/* other classes: main, and columns */
+.grid-item {
+    padding:2vh;
+}
+
+.comment-item {
+    margin:5vh;
+}
+
+.shown {
+    clear:none;
+
+}
+
+#gav:hover {
+    content:url("http://www.robf.com.au/wp-content/uploads/2012/03/Miracle+Of+Sound+210016_115631271850723_1070278.jpg")
+}
+
+/* HERE (700 px changes) */
+
+@media (max-width:700px){
+
+    body {
+        font-size:0.8rem;
+        color:slategray;
+    }
+
+/*  HERE (font scaling) */
+
+    p {
+        font-size:0.6rem;
+    }
+    .text {
+        columns:30;
+
+    }
+}
+
+/* HERE (700px changes) */
+
+@media (max-width:500px){
+
+    .right {
+        width:95%;
+        display:inline-block;
+        overflow:auto;
+        position:unset;
+        margin:0 auto 1vh auto;
+        padding:2%;
+        float:none;
+    }
+
+    body {
+        color:darkslategray;
+    }
+
+    p{
+        font-size:1.5vh;
+    }
+
+    .text {
+        columns:40;
+
+    }
+
+    .comments {
+        bottom:0px;
+        top:unset;
+    }
+
+    #comments-list {
+        bottom:200px;
+    }
+
+    .form-group {
+        max-width:80vw;
+    }
+
+    .grid-view {
+        left:1vw;
+    }
+}
